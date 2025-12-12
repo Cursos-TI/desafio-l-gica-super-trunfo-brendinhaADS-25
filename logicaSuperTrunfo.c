@@ -29,7 +29,7 @@ int main() {
     scanf("%s", cidade); 
 
     printf("Área(km²):\n"); 
-    scanf("%f", area); 
+    scanf("%f", &area); 
 
     printf("População:\n"); 
     scanf("%f", &pessoas); 
@@ -42,7 +42,7 @@ int main() {
     
     printf("\n!!! CARTA 2!!!\n"); 
 
-    char Estado, Cidade [10], codigo; 
+    char Estado, Cidade [10], Codigo [10]; 
     float Pessoas, Pib, Area; 
     int Ponto; 
 
@@ -50,13 +50,13 @@ int main() {
     scanf(" %c", &Estado); 
 
     printf("Código da carta:(EX:A01..)\n"); 
-    scanf("%s", Cidade); 
+    scanf("%s", Codigo); 
 
     printf("Digite a Cidade:\n"); 
     scanf("%s", Cidade); 
 
     printf("Área(km²):\n"); 
-    scanf("%f", Area); 
+    scanf("%f", &Area); 
 
     printf("População:\n"); 
     scanf("%f", &Pessoas); 
