@@ -8,23 +8,93 @@
 int main() {
     // Definição das variáveis para armazenar as propriedades das cidades
     // Você pode utilizar o código do primeiro desafio
-
+    printf("!!! CARTA 1!!!\n"); 
+   
+    char estado, codigo [10], cidade [10];   
+    float pessoas, pib, area;     
+    int pontos; 
     
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
     // utilize o código do primeiro desafio
 
-    // Exemplo:
-    // printf("Digite o código da cidade: ");
-    // scanf("%s", codigo);
-    // 
-    // (Repita para cada propriedade)
+    printf("Uma letra de 'A', 'B', (representando um estado):\n" ); 
+    scanf(" %c", &estado); 
+
+    printf("Código da carta:(EX:A01..)\n"); 
+    scanf("%s", codigo); 
+
+    printf("Digite a Cidade:\n"); 
+    scanf("%s", cidade); 
+
+    printf("Área(km²):\n"); 
+    scanf("%f", area); 
+
+    printf("População:\n"); 
+    scanf("%f", &pessoas); 
+
+    printf("PIB:\n"); 
+    scanf("%f", &pib); 
+
+    printf("Nº de pontos turísticos:\n"); 
+    scanf("%d", &pontos); 
+    
+    printf("\n!!! CARTA 2!!!\n"); 
+
+    char Estado, Cidade [10], codigo; 
+    float Pessoas, Pib, Area; 
+    int Ponto; 
+
+    printf("Uma letra de 'A', 'B', (representando um estado):\n" ); 
+    scanf(" %c", &Estado); 
+
+    printf("Código da carta:(EX:A01..)\n"); 
+    scanf("%s", Cidade); 
+
+    printf("Digite a Cidade:\n"); 
+    scanf("%s", Cidade); 
+
+    printf("Área(km²):\n"); 
+    scanf("%f", Area); 
+
+    printf("População:\n"); 
+    scanf("%f", &Pessoas); 
+
+    printf("PIB:\n"); 
+    scanf("%f", &Pib); 
+
+    printf("Nº de pontos turísticos:\n"); 
+    scanf("%d", &Ponto); 
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
     // Utilize estruturas de decisão como if, if-else para comparar atributos como população, área, PIB, etc.
 
+    if(area > Area){
+       printf("A Carta1 tem maior área\n"); 
+    } else{
+      printf("A Carta2 tem maior área\n"); 
+    }
+
+    if(pessoas > Pessoas){
+       printf("A Carta1 tem a maior população\n"); 
+    } else{
+      printf("A Carta2 tem a maoir população\n"); 
+    }
+
+    if(pib > Pib){
+       printf("A Carta1 tem maior PIB\n"); 
+    } else{
+      printf("A Carta2 tem maior PIB\n"); 
+    }
+
+    
+    if(pontos > Ponto){
+       printf("A Carta1 tem maior número de pontos turísticos\n");  
+    } else{
+      printf("A Carta2 tem maior número de pontos turísticos\n"); 
+    }
     // Exemplo:
     // if (populacaoA > populacaoB) {
     //     printf("Cidade 1 tem maior população.\n");
