@@ -1,4 +1,6 @@
-#include <stdio.h>
+#include <stdio.h> 
+#include <stdbit.h> 
+#include <time.h> 
 
 // Desafio Super Trunfo - Países
 // Tema 2 - Comparação das Cartas
@@ -122,7 +124,65 @@ int main() {
 
     // Exemplo:
     // printf("A cidade vencedora é: %s\n", cidadeVencedora);
-        
+
+    //menu interativo
+
+    int opcao, opcao2; 
+
+
+  printf("***MENU INTERATIVO***\n"); 
+  printf("Escolha uma das opções:\n"); 
+  printf("1. Nome da cidade: %s\n"); 
+  printf("2. Populacão \n"); 
+  printf("3. Área \n"); 
+  printf("4. PIB\n"); 
+  printf("5. Nº de Pontos turísticos\n "); 
+  scanf("%d", &opcao); 
+
+  switch (opcao)
+  {
+  case 1:
+    printf("Cidade: %s\n", cidade); 
+    break;
+  case 2: 
+    printf("População: %f\n", pessoas); 
+  case 3: 
+     printf("Área: %f\n", area); 
+     break; 
+    case 4: 
+       printf("PIB: %f\n", pib); 
+       break; 
+      case 5: 
+         printf("Nº de pontos Turísticos: %d\n", pontos); 
+         break;
+    default: 
+        printf("Opção inválida\n"); 
+    break;
+  }
+  
+
+  switch (opcao2)
+  {
+  case 1:
+    printf("Cidade: %s\n", Cidade); 
+    break;
+  case 2: 
+    printf("População: %f\n", Pessoas); 
+  case 3: 
+     printf("Área: %f\n", Area); 
+     break; 
+    case 4: 
+       printf("PIB: %f\n", Pib); 
+       break; 
+      case 5: 
+         printf("Nº de pontos Turísticos: %d\n", Ponto); 
+         break;
+    default: 
+        printf("Opção inválida\n"); 
+    break;
+  }
+
+
 
     return 0;
 }
