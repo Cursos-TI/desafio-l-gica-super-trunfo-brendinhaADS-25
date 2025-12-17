@@ -132,7 +132,7 @@ int main() {
 
   printf("***MENU INTERATIVO***\n"); 
   printf("Escolha uma das opções:\n"); 
-  printf("1. Nome da cidade: %s\n"); 
+  printf("1. Nome da cidade: %s\n", cidade); 
   printf("2. Populacão \n"); 
   printf("3. Área \n"); 
   printf("4. PIB\n"); 
