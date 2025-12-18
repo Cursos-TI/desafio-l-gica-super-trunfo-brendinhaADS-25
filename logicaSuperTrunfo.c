@@ -142,9 +142,16 @@ int main() {
   switch (opcao)
   {
   case 1:
-    printf("Cidade: %s\n", cidade); 
+    printf("Cidade: %s\n", cidade, Cidade);  
     break;
   case 2: 
+  if (pessoas > Pessoas)
+  {
+    printf("A CARTA1 VENCEU EM POPULAÇÃO!\n"); 
+  } else if(Pessoas > pessoas)
+  { 
+    printf("A CARTA2 VENCEU EM POPULAÇÃO!\n"); 
+  }
     printf("População: %f\n", pessoas); 
   case 3: 
      printf("Área: %f\n", area); 
@@ -159,6 +166,7 @@ int main() {
         printf("Opção inválida\n"); 
     break;
   }
+  
   
   printf("***MENU INTERATIVO CARTA2***\n"); 
   printf("Escolha uma das opções:\n"); 
