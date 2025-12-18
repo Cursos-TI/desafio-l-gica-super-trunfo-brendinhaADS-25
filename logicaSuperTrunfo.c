@@ -131,74 +131,85 @@ int main() {
 
 
   printf("***MENU INTERATIVO CARTA1***\n"); 
-  printf("Escolha uma das opções:\n"); 
+  printf("Escolha uma das opções para comparar:\n"); 
   printf("1. Nome da cidade: %s\n", cidade); 
   printf("2. Populacão \n"); 
   printf("3. Área \n"); 
   printf("4. PIB\n"); 
-  printf("5. Nº de Pontos turísticos\n "); 
+  printf("5. Nº de Pontos turísticos\n ");  
+  printf("Escolha: "); 
   scanf("%d", &opcao); 
 
   switch (opcao)
   {
   case 1:
-    printf("Cidade: %s\n", cidade, Cidade);  
+    printf("Carta1: %s\n", cidade);  
+    printf("Carta2: %s\n", Cidade);  
     break;
   case 2: 
-  if (pessoas > Pessoas)
+    printf("População:\n"); 
+    printf("Carta1: %f\n", pessoas); 
+    printf("Carta 2: %f\n", Pessoas);
+    break; 
+  case 3: 
+    printf("Área:\n"); 
+    printf("Carta1: %f\n", area); 
+    printf("carta2: %f\n", Area); 
+    break; 
+  case 4: 
+    printf("PIB:\n"); 
+    printf("Carta1: %f\n", pib); 
+    printf("Carta2: %f\n", Pib);
+    break; 
+  case 5: 
+    printf("Número de Pontos turísticos:\n"); 
+    printf("Carta1: %d\n", pontos); 
+    printf("Carta2: %d\n", Ponto); 
+    break;
+    default: 
+        printf("Opção inválida\n"); 
+    break;
+  }
+  
+  
+   if (pessoas > Pessoas)
   {
     printf("A CARTA1 VENCEU EM POPULAÇÃO!\n"); 
   } else if(Pessoas > pessoas)
-  { 
-    printf("A CARTA2 VENCEU EM POPULAÇÃO!\n"); 
-  }
-    printf("População: %f\n", pessoas); 
-  case 3: 
-     printf("Área: %f\n", area); 
-     break; 
-    case 4: 
-       printf("PIB: %f\n", pib); 
-       break; 
-      case 5: 
-         printf("Nº de pontos Turísticos: %d\n", pontos); 
-         break;
-    default: 
-        printf("Opção inválida\n"); 
-    break;
-  }
-  
-  
-  printf("***MENU INTERATIVO CARTA2***\n"); 
-  printf("Escolha uma das opções:\n"); 
-  printf("1. Nome da cidade: %s\n", Cidade); 
-  printf("2. Populacão \n"); 
-  printf("3. Área \n"); 
-  printf("4. PIB\n"); 
-  printf("5. Nº de Pontos turísticos\n "); 
-  scanf("%d", &opcao2); 
+   { 
+    printf("A CARTA2 VENCEU EM POPULAÇÃO!\n");
+   } else{
+    printf("Empate\n"); 
+   }
+   
+   if(area > Area)
+   {
+    printf("A CARTA1 VENCEU EM ÁREA\n"); 
+   } else if(Area > area)
+   {
+    printf("A CARTA2 VENCEU EM ÁREA\n");
+   } else {
+    printf("Empate\n"); 
+   }
 
-  switch (opcao2)
-  {
-  case 1:
-    printf("Cidade: %s\n", Cidade); 
-    break;
-  case 2: 
-    printf("População: %f\n", Pessoas); 
-  case 3: 
-     printf("Área: %f\n", Area); 
-     break; 
-    case 4: 
-       printf("PIB: %f\n", Pib); 
-       break; 
-      case 5: 
-         printf("Nº de pontos Turísticos: %d\n", Ponto); 
-         break;
-    default: 
-        printf("Opção inválida\n"); 
-    break;
-  }
+   if(pib > Pib)
+   {
+    printf("A CARTA1 VENCEU EM PIB\n"); 
+   } else if(Pib > pib)
+   {
+    printf("A CARTA2 VENCEU EM PIB\n"); 
+   } else{
+    printf("Empate\n"); 
+   }
 
+   if(pontos > Ponto)
+   {
+    printf("A CARTA1 VENCEU EM Nº DE PONTOS\n"); 
+   } else if(Ponto > pontos)
+   {
+    printf("A CARTA2 VENCEU EM Nº DE PONTOS\n"); 
+   } 
 
-
+   
     return 0;
 }
