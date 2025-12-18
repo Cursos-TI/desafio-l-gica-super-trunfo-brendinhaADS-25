@@ -130,7 +130,7 @@ int main() {
     int opcao, opcao2; 
 
 
-  printf("***MENU INTERATIVO***\n"); 
+  printf("***MENU INTERATIVO CARTA1***\n"); 
   printf("Escolha uma das opções:\n"); 
   printf("1. Nome da cidade: %s\n", cidade); 
   printf("2. Populacão \n"); 
@@ -160,6 +160,14 @@ int main() {
     break;
   }
   
+  printf("***MENU INTERATIVO CARTA2***\n"); 
+  printf("Escolha uma das opções:\n"); 
+  printf("1. Nome da cidade: %s\n", Cidade); 
+  printf("2. Populacão \n"); 
+  printf("3. Área \n"); 
+  printf("4. PIB\n"); 
+  printf("5. Nº de Pontos turísticos\n "); 
+  scanf("%d", &opcao2); 
 
   switch (opcao2)
   {
