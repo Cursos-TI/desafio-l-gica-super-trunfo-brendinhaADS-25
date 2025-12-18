@@ -132,7 +132,7 @@ int main() {
 
   printf("***MENU INTERATIVO CARTA1***\n"); 
   printf("Escolha uma das opções para comparar:\n"); 
-  printf("1. Nome da cidade: %s\n", cidade); 
+  printf("1. Nome da cidade:\n"); 
   printf("2. Populacão \n"); 
   printf("3. Área \n"); 
   printf("4. PIB\n"); 
@@ -150,29 +150,8 @@ int main() {
     printf("População:\n"); 
     printf("Carta1: %f\n", pessoas); 
     printf("Carta 2: %f\n", Pessoas);
-    break; 
-  case 3: 
-    printf("Área:\n"); 
-    printf("Carta1: %f\n", area); 
-    printf("carta2: %f\n", Area); 
-    break; 
-  case 4: 
-    printf("PIB:\n"); 
-    printf("Carta1: %f\n", pib); 
-    printf("Carta2: %f\n", Pib);
-    break; 
-  case 5: 
-    printf("Número de Pontos turísticos:\n"); 
-    printf("Carta1: %d\n", pontos); 
-    printf("Carta2: %d\n", Ponto); 
-    break;
-    default: 
-        printf("Opção inválida\n"); 
-    break;
-  }
-  
-  
-   if (pessoas > Pessoas)
+    
+    if (pessoas > Pessoas)
   {
     printf("A CARTA1 VENCEU EM POPULAÇÃO!\n"); 
   } else if(Pessoas > pessoas)
@@ -181,8 +160,13 @@ int main() {
    } else{
     printf("Empate\n"); 
    }
-   
-   if(area > Area)
+    break; 
+  case 3: 
+    printf("Área:\n"); 
+    printf("Carta1: %f\n", area); 
+    printf("carta2: %f\n", Area); 
+
+    if(area > Area)
    {
     printf("A CARTA1 VENCEU EM ÁREA\n"); 
    } else if(Area > area)
@@ -191,8 +175,13 @@ int main() {
    } else {
     printf("Empate\n"); 
    }
+    break; 
+  case 4: 
+    printf("PIB:\n"); 
+    printf("Carta1: %f\n", pib); 
+    printf("Carta2: %f\n", Pib); 
 
-   if(pib > Pib)
+     if(pib > Pib)
    {
     printf("A CARTA1 VENCEU EM PIB\n"); 
    } else if(Pib > pib)
@@ -201,15 +190,25 @@ int main() {
    } else{
     printf("Empate\n"); 
    }
+    break; 
+  case 5: 
+    printf("Número de Pontos turísticos:\n"); 
+    printf("Carta1: %d\n", pontos); 
+    printf("Carta2: %d\n", Ponto); 
 
-   if(pontos > Ponto)
+     if(pontos > Ponto)
    {
     printf("A CARTA1 VENCEU EM Nº DE PONTOS\n"); 
    } else if(Ponto > pontos)
    {
     printf("A CARTA2 VENCEU EM Nº DE PONTOS\n"); 
-   } 
+   }
+    break;
+    default: 
+        printf("Opção inválida\n"); 
+    break;
+  }
+  
 
-   
     return 0;
 }
