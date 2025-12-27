@@ -223,6 +223,14 @@ int main() {
     printf("Densidade Populacinal\n"); 
     printf("Carta1: %f\n", densidade); 
     printf("Carta2:%f\n", densidade2); 
+
+     if(densidade < densidade2)
+     {
+      printf("A CARTA1 VENCEU EN DENSIDADE POPULACIONAL\n"); 
+     } else if(densidade2 < densidade)
+     {
+      printf("A CARTA2 VENCEU EM DENSIDADE POPULACIONAL\n"); 
+     }
     break; 
     default: 
         printf("Opção inválida\n"); 
