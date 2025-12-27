@@ -16,7 +16,7 @@ int main() {
     float pessoas, pib, area;     
     int pontos; 
     int carta1 = 0; 
-    float densidade, divisao1, divisao2, inversa, inversa2; 
+    float densidade, densidade2, divisao1, divisao2, inversa, inversa2; 
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
@@ -43,7 +43,7 @@ int main() {
     printf("Nº de pontos turísticos:\n"); 
     scanf("%d", &pontos); 
     
-    divisao1 = (float) pessoas / area;
+    densidade = (float) pessoas / area;
     inversa = 1.0 / densidade; 
     printf("\n!!! CARTA 2!!!\n"); 
 
@@ -73,7 +73,7 @@ int main() {
     printf("Nº de pontos turísticos:\n"); 
     scanf("%d", &Ponto); 
 
-    divisao2 = (float) Pessoas / Area;
+    densidade2 = (float) Pessoas / Area;
     inversa2 = 1.0 / densidade; 
 
     // Comparação de Cartas:
@@ -226,10 +226,10 @@ int main() {
 
      if(densidade < densidade2)
      {
-      printf("A CARTA1 VENCEU EN DENSIDADE POPULACIONAL\n"); 
+      printf("A CARTA2 VENCEU EN DENSIDADE POPULACIONAL\n"); 
      } else if(densidade2 < densidade)
      {
-      printf("A CARTA2 VENCEU EM DENSIDADE POPULACIONAL\n"); 
+      printf("A CARTA1 VENCEU EM DENSIDADE POPULACIONAL\n"); 
      }
     break; 
     default: 
