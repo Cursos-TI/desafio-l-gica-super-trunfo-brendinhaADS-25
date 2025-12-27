@@ -16,6 +16,7 @@ int main() {
     float pessoas, pib, area;     
     int pontos; 
     int carta1 = 0; 
+    float densidade, divisao1, divisao2, inversa, inversa2; 
     // Cadastro das Cartas:
     // Implemente a lógica para solicitar ao usuário que insira os dados das cidades
     // utilizando a função scanf para capturar as entradas.
@@ -42,12 +43,14 @@ int main() {
     printf("Nº de pontos turísticos:\n"); 
     scanf("%d", &pontos); 
     
+    divisao1 = (float) pessoas / area;
+    inversa = 1.0 / densidade; 
     printf("\n!!! CARTA 2!!!\n"); 
 
     char Estado, Cidade [10], Codigo [10]; 
-    float Pessoas, Pib, Area; 
+    float Pessoas, Pib, Area, densidade2; 
     int Ponto; 
-    int carta2 = 0; 
+    int carta2 = 0;  
 
     printf("Uma letra de 'A', 'B', (representando um estado):\n" ); 
     scanf(" %c", &Estado); 
@@ -69,6 +72,9 @@ int main() {
 
     printf("Nº de pontos turísticos:\n"); 
     scanf("%d", &Ponto); 
+
+    divisao2 = (float) Pessoas / Area;
+    inversa2 = 1.0 / densidade; 
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
@@ -105,6 +111,14 @@ int main() {
       printf("A Carta2 tem maior número de pontos turísticos\n"); 
       carta2++; 
     } 
+    
+    if(densidade > densidade2){
+      printf("A carta1 tem maior densidade populacional\n");
+      carta1++;  
+    } else{
+      printf("A Carat2 tem maior densidade populacional\n"); 
+      carta2++; 
+    }
 
     if(carta1 > carta2){
        printf("A CARTA1 É A VENCEDORA!!!\n"); 
@@ -137,6 +151,7 @@ int main() {
   printf("3. Área \n"); 
   printf("4. PIB\n"); 
   printf("5. Nº de Pontos turísticos\n ");  
+  printf("6. Densidade Populacional\n"); 
   printf("Escolha: "); 
   scanf("%d", &opcao); 
 
@@ -204,6 +219,11 @@ int main() {
     printf("A CARTA2 VENCEU EM Nº DE PONTOS\n"); 
    }
     break;
+    case 6: 
+    printf("Densidade Populacinal\n"); 
+    printf("Carta1: %f\n", densidade); 
+    printf("Carta2:%f\n", densidade2); 
+    break; 
     default: 
         printf("Opção inválida\n"); 
     break;
