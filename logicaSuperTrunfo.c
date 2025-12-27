@@ -48,7 +48,7 @@ int main() {
     printf("\n!!! CARTA 2!!!\n"); 
 
     char Estado, Cidade [10], Codigo [10]; 
-    float Pessoas, Pib, Area, densidade2; 
+    float Pessoas, Pib, Area; 
     int Ponto; 
     int carta2 = 0;  
 
@@ -74,7 +74,7 @@ int main() {
     scanf("%d", &Ponto); 
 
     densidade2 = (float) Pessoas / Area;
-    inversa2 = 1.0 / densidade; 
+    inversa2 = 1.0 / densidade2; 
 
     // Comparação de Cartas:
     // Desenvolva a lógica de comparação entre duas cartas.
