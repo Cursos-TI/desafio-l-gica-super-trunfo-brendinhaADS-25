@@ -1,5 +1,5 @@
 #include <stdio.h> 
-#include <stdbit.h> 
+#include <stdlib.h>
 #include <time.h> 
 
 // Desafio Super Trunfo - Países
