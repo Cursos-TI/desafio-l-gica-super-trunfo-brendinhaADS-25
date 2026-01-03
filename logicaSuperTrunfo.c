@@ -316,6 +316,15 @@ int main() {
     }
   }
   
+  if (resultado1 && resultado2) 
+  {
+    printf("Parabêns! Você venceu!\n"); 
+  } else if (resultado1 != resultado2) 
+  {
+    printf("Empate!\n"); 
+  } else{
+    printf("Você perdeu!\n"); 
+  }
   
     return 0;
 }
