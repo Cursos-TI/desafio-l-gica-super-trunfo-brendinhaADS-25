@@ -242,12 +242,12 @@ int main() {
   int resultado1, resultado2, ataque1, ataque2, defesa1, defesa2, recuo1, recuo2; 
 
   srand(time(0)); 
-  ataque1 = 1; rand() % 100 + 1; 
-  ataque2= 0; rand() % 100 + 1;  
-  defesa1 = 1; rand() % 100 + 1;
-  defesa2 = 0; rand() % 100 + 1;
-  recuo1 = 1; rand() % 100 + 1;
-  recuo2 = 0; rand() % 100 + 1; 
+  ataque1 = rand() % 100 + 1; 
+  ataque2 = rand() % 100 + 1;  
+  defesa1 = rand() % 100 + 1;
+  defesa2 = rand() % 100 + 1;
+  recuo1 = rand() % 100 + 1;
+  recuo2 = rand() % 100 + 1; 
   
   //menu para escolher atributo 
 
