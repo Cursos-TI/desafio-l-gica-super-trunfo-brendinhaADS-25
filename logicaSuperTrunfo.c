@@ -257,7 +257,7 @@ int main() {
   printf("D. Defesa\n"); 
   printf("R. Recuo\n"); 
   printf("Escolha a comparação:");  
-  scanf("%c", &atributo1); 
+  scanf(" %c", &atributo1); 
 
   switch (atributo1)
   {
@@ -287,7 +287,7 @@ int main() {
   printf("D. Defesa\n"); 
   printf("R. Recuo\n"); 
   printf("Escolha a comparação:");  
-  scanf("%c", &atributo2); 
+  scanf(" %c", &atributo2); 
 
   if (atributo1 == atributo2)
   {
