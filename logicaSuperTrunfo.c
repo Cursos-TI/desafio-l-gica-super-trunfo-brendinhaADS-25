@@ -238,5 +238,84 @@ int main() {
   }
   
 
+  char atributo1,  atributo2; 
+  int resultado1, resultado2, ataque1, ataque2, defesa1, defesa2, recuo1, recuo2; 
+
+  srand(time(0)); 
+  ataque1 = 1; rand() % 100 + 1; 
+  ataque2= 0; rand() % 100 + 1;  
+  defesa1 = 1; rand() % 100 + 1;
+  defesa2 = 0; rand() % 100 + 1;
+  recuo1 = 1; rand() % 100 + 1;
+  recuo2 = 0; rand() % 100 + 1; 
+  
+  //menu para escolher atributo 
+
+  printf("Menu Interiativo Atributo 1!\n"); 
+  printf("Escolha um atributo\n"); 
+  printf(". Ataque\n"); 
+  printf("D. Defesa\n"); 
+  printf("R. Recuo\n"); 
+  printf("Escolha a comparação:");  
+  scanf("%c", &atributo1); 
+
+  switch (atributo1)
+  {
+  case 'A': 
+  case'a': 
+    printf("Você escolheu a opção Ataque!\n"); 
+    resultado1 = ataque1 > ataque2 ? 1 : 0;  
+  break; 
+  case 'D': 
+  case 'd': 
+    printf("Você escolheu a opção Defesa!\n"); 
+    resultado1 = defesa1 > ataque2 ? 1 : 0; 
+  break; 
+  case 'R': 
+  case 'r': 
+    printf("Você escolheu a opção Recuo!\n"); 
+    resultado1 = recuo1 > recuo2 ? 1 : 0; 
+  break; 
+  default:
+    printf("Opção inválida de jogo!\n"); 
+    break;
+  }
+
+  printf("Menu Interiativo Atributo 2!\n"); 
+  printf("Escolha um atributo\n"); 
+  printf(". Ataque\n"); 
+  printf("D. Defesa\n"); 
+  printf("R. Recuo\n"); 
+  printf("Escolha a comparação:");  
+  scanf("%c", &atributo2); 
+
+  if (atributo1 == atributo2)
+  {
+    printf("Você escolheu o mesmo Atributo!\n"); 
+  } else{
+    switch (atributo2)
+    {
+    case 'A':
+    case 'a': 
+      printf("Você escolheu a opção Ataque!\n"); 
+      resultado2 = ataque1 > ataque2 ? 1 : 0; 
+      break; 
+    case 'D': 
+    case 'd': 
+      printf("Você escolheu a opção Defesa!\n"); 
+      resultado2 = defesa1 > defesa2 ? 1 : 0; 
+    break; 
+    case 'R': 
+    case 'r': 
+      printf("Você escolheu a opção Recuo!\n"); 
+      resultado2 = recuo1 > recuo2 ? 1 : 0; 
+    break; 
+    default: 
+      printf("Opção inválida de jogo!\n"); 
+      break;
+    }
+  }
+  
+  
     return 0;
 }
