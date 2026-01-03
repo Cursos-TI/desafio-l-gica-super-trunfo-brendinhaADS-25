@@ -253,7 +253,7 @@ int main() {
 
   printf("Menu Interiativo Atributo 1!\n"); 
   printf("Escolha um atributo\n"); 
-  printf(". Ataque\n"); 
+  printf("A. Ataque\n"); 
   printf("D. Defesa\n"); 
   printf("R. Recuo\n"); 
   printf("Escolha a comparação:");  
@@ -283,7 +283,7 @@ int main() {
 
   printf("Menu Interiativo Atributo 2!\n"); 
   printf("Escolha um atributo\n"); 
-  printf(". Ataque\n"); 
+  printf("A. Ataque\n"); 
   printf("D. Defesa\n"); 
   printf("R. Recuo\n"); 
   printf("Escolha a comparação:");  
