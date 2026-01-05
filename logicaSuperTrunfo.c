@@ -56,10 +56,10 @@ int main() {
     scanf(" %c", &Estado); 
 
     printf("Código da carta:(EX:A01..)\n"); 
-    scanf("%s", Codigo); 
+    scanf(" %s", Codigo); 
 
     printf("Digite a Cidade:\n"); 
-    scanf("%s", Cidade); 
+    scanf(" %s", Cidade); 
 
     printf("Área(km²):\n"); 
     scanf("%f", &Area); 
