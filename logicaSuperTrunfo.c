@@ -239,15 +239,19 @@ int main() {
   
 
   char atributo1,  atributo2; 
-  int resultado1, resultado2, ataque1, ataque2, defesa1, defesa2, recuo1, recuo2; 
+  int resultado1, resultado2;  
 
   srand(time(0)); 
-  ataque1 = rand() % 100 + 1; 
-  ataque2 = rand() % 100 + 1;  
-  defesa1 = rand() % 100 + 1;
-  defesa2 = rand() % 100 + 1;
-  recuo1 = rand() % 100 + 1;
-  recuo2 = rand() % 100 + 1; 
+  pessoas = rand() % 100 + 1; 
+  Pessoas = rand() % 100 + 1;  
+  area = rand() % 100 + 1;
+  Area = rand() % 100 + 1;
+  pontos = rand() % 100 + 1;
+  Ponto = rand() % 100 + 1; 
+  pib = rand() % 100 + 1; 
+  Pib  = rand() % 100 + 1; 
+  densidade = rand() % 100 + 1; 
+  densidade2 = rand() % 100 + 1; 
   
   //menu para escolher atributo 
 
