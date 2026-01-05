@@ -255,8 +255,8 @@ int main() {
   printf("Escolha um atributo\n"); 
   printf("P. População\n"); 
   printf("A. Área\n"); 
-  printf("PI. PIB\n"); 
-  printf("PT. Pontos Turísticos\n"); 
+  printf("B. PIB\n"); 
+  printf("T. Pontos Turísticos\n"); 
   printf("D. Densiddade populacional\n"); 
   printf("Escolha a comparação:");  
   scanf(" %c", &atributo1); 
@@ -273,13 +273,13 @@ int main() {
     printf("Você escolheu a opção Área!\n"); 
     resultado1 = area > Area ? 1 : 0; 
   break; 
-  case 'PI': 
-  case 'pi': 
+  case 'B': 
+  case 'b': 
     printf("Você escolheu a opção PIB!\n"); 
     resultado1 = pib > Pib ? 1 : 0; 
   break; 
-  case 'PT': 
-  case 'pt': 
+  case 'T': 
+  case 't': 
      printf("Você escolheu a opção Pontos Turísticos\n"); 
      resultado1 = pontos > Ponto ? 1 : 0; 
   break; 
@@ -290,15 +290,15 @@ int main() {
   break; 
   default:
     printf("Opção inválida de jogo!\n"); 
-    break;
+  break;
   }
 
   printf("Menu Interiativo Atributo 2!\n"); 
   printf("Escolha um atributo\n"); 
   printf("P. População\n"); 
   printf("A. Área\n"); 
-  printf("PI. PIB\n"); 
-  printf("PT. Pontos Turísticos\n"); 
+  printf("B. PIB\n"); 
+  printf("T. Pontos Turísticos\n"); 
   printf("D. Densiddade populacional\n"); 
   printf("Escolha a comparação:");  
   scanf(" %c", &atributo2); 
@@ -319,16 +319,13 @@ int main() {
       printf("Você escolheu a opção Área!\n"); 
       resultado2 = area> Area ? 1 : 0; 
     break; 
-    case 'PI': 
-    case 'pi': 
+    case 'B': 
+    case 'b': 
       printf("Você escolheu a opção PIB!\n"); 
       resultado2 = pib > Pib ? 1 : 0; 
-    break; 
-    default: 
-      printf("Opção inválida de jogo!\n"); 
     break;
-    case 'PT': 
-    case 'pt': 
+    case 'T': 
+    case 't': 
      printf("Você escolheu a opção Pontos Turísticos\n"); 
      resultado2 = pontos > Ponto ? 1 : 0; 
     break; 
@@ -336,6 +333,9 @@ int main() {
     case 'd': 
      printf("Você escolheu a opção Densidade Demográfica\n"); 
      resultado2 = densidade < densidade2 ? 1 : 0; 
+    break; 
+    default: 
+      printf("Opção inválida de jogo!\n"); 
     break; 
     }
   }
