@@ -253,28 +253,40 @@ int main() {
 
   printf("Menu Interiativo Atributo 1!\n"); 
   printf("Escolha um atributo\n"); 
-  printf("A. Ataque\n"); 
-  printf("D. Defesa\n"); 
-  printf("R. Recuo\n"); 
+  printf("P. População\n"); 
+  printf("A. Área\n"); 
+  printf("PI. PIB\n"); 
+  printf("PT. Pontos Turísticos\n"); 
+  printf("D. Densiddade populacional\n"); 
   printf("Escolha a comparação:");  
   scanf(" %c", &atributo1); 
 
   switch (atributo1)
   {
+  case 'P': 
+  case'p': 
+    printf("Você escolheu a opção Populacão!\n"); 
+    resultado1 = pessoas > Pessoas? 1 : 0;  
+  break; 
   case 'A': 
-  case'a': 
-    printf("Você escolheu a opção Ataque!\n"); 
-    resultado1 = ataque1 > ataque2 ? 1 : 0;  
+  case 'a': 
+    printf("Você escolheu a opção Área!\n"); 
+    resultado1 = area > Area ? 1 : 0; 
+  break; 
+  case 'PI': 
+  case 'pi': 
+    printf("Você escolheu a opção PIB!\n"); 
+    resultado1 = pib > Pib ? 1 : 0; 
+  break; 
+  case 'PT': 
+  case 'pt': 
+     printf("Você escolheu a opção Pontos Turísticos\n"); 
+     resultado1 = pontos > Ponto ? 1 : 0; 
   break; 
   case 'D': 
   case 'd': 
-    printf("Você escolheu a opção Defesa!\n"); 
-    resultado1 = defesa1 > ataque2 ? 1 : 0; 
-  break; 
-  case 'R': 
-  case 'r': 
-    printf("Você escolheu a opção Recuo!\n"); 
-    resultado1 = recuo1 > recuo2 ? 1 : 0; 
+    printf("Você escolheu a opção Densidade Demográfica\n"); 
+    resultado1 = densidade < densidade2 ? 1 : 0; 
   break; 
   default:
     printf("Opção inválida de jogo!\n"); 
@@ -283,9 +295,11 @@ int main() {
 
   printf("Menu Interiativo Atributo 2!\n"); 
   printf("Escolha um atributo\n"); 
-  printf("A. Ataque\n"); 
-  printf("D. Defesa\n"); 
-  printf("R. Recuo\n"); 
+  printf("P. População\n"); 
+  printf("A. Área\n"); 
+  printf("PI. PIB\n"); 
+  printf("PT. Pontos Turísticos\n"); 
+  printf("D. Densiddade populacional\n"); 
   printf("Escolha a comparação:");  
   scanf(" %c", &atributo2); 
 
@@ -295,24 +309,34 @@ int main() {
   } else{
     switch (atributo2)
     {
-    case 'A':
-    case 'a': 
-      printf("Você escolheu a opção Ataque!\n"); 
-      resultado2 = ataque1 > ataque2 ? 1 : 0; 
+    case 'P':
+    case 'p': 
+      printf("Você escolheu a opção População!\n"); 
+      resultado2 = pessoas > Pessoas ? 1 : 0; 
       break; 
-    case 'D': 
-    case 'd': 
-      printf("Você escolheu a opção Defesa!\n"); 
-      resultado2 = defesa1 > defesa2 ? 1 : 0; 
+    case 'A': 
+    case 'a': 
+      printf("Você escolheu a opção Área!\n"); 
+      resultado2 = area> Area ? 1 : 0; 
     break; 
-    case 'R': 
-    case 'r': 
-      printf("Você escolheu a opção Recuo!\n"); 
-      resultado2 = recuo1 > recuo2 ? 1 : 0; 
+    case 'PI': 
+    case 'pi': 
+      printf("Você escolheu a opção PIB!\n"); 
+      resultado2 = pib > Pib ? 1 : 0; 
     break; 
     default: 
       printf("Opção inválida de jogo!\n"); 
-      break;
+    break;
+    case 'PT': 
+    case 'pt': 
+     printf("Você escolheu a opção Pontos Turísticos\n"); 
+     resultado2 = pontos > Ponto ? 1 : 0; 
+    break; 
+    case 'D': 
+    case 'd': 
+     printf("Você escolheu a opção Densidade Demográfica\n"); 
+     resultado2 = densidade < densidade2 ? 1 : 0; 
+    break; 
     }
   }
   
